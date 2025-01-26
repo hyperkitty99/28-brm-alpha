@@ -1,0 +1,161 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				-160
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Nick Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				146,
+				-155
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Nick Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				26,
+				-164
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Nick Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				57,
+				-170
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Nick Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				-124
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Nick Up",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				40,
+				-160
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "Nick Idle",
+			"indices": [
+				10,
+				11,
+				12,
+				12
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				146,
+				-155
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "Nick Right",
+			"indices": [
+				12,
+				13,
+				14,
+				15
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				26,
+				-164
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "Nick Left",
+			"indices": [
+				15,
+				16,
+				17,
+				18
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				62,
+				-124
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "Nick Up",
+			"indices": [
+				29,
+				29,
+				29,
+				29
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				57,
+				-170
+			],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "Nick Down",
+			"indices": [
+				29,
+				29,
+				29,
+				29,
+				29
+			]
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/nick",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "nest",
+	"flip_x": true,
+	"healthbar_colors": [
+		105,
+		0,
+		166
+	],
+	"camera_position": [
+		-30,
+		190
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
