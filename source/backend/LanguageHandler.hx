@@ -1,36 +1,37 @@
 package backend;
 
-@:publicFields class LanguageHandler {
-    private static var thetheLanguage = 'English';
-    private static var thetheString:Map<String, String> = new Map<String, String>();
+class LanguageHandler {
+    public static var language:String = 'English';
+    static var translatedString:Map<String, String> = new Map();
 
-    static function __init__() loadLanguage(thetheLanguage);
+    public static function loadLanguage(language:String):Void {
+        this.language = language;
+        translatedString.clear();
 
-    inline static function loadLanguage(language:String) {
         try {
-            for (entry in File.getContent('assets/languages/$language.ini').split('\n')) {
-                if (entry != '') {
-                    final keyValue = entry.split('=');
-                    thetheString.set(keyValue[0].trim(), keyValue[1].trim());
+            for (line in File.getContent('assets/languages/$language.ini').split('\n')) {
+                var trimmedLine = line.trim();
+
+                if (trimmedLine != '' || !trimmedLine.startsWith(';')) {
+                    final parts:Array<String> = trimmedLine.split('=').replace('\\n', '\n');
+
+                    if (parts.length >= 2) {
+                        translatedString.set(parts[0].trim(), parts.slice(1).join('=').trim());
+                    } else {
+                        trace('Warning: Could not parse line: "$line"');
+                    }
                 }
             }
         } catch (error:Dynamic) {
-            trace('skill issue!! heres the error ig: $error');
-            if (language != 'English') loadLanguage('English');
+            trace(error);
+
+            if (language != 'English') {
+                loadLanguage('English');
+            }
         }
     }
 
-    static function switchLanguage(language:String) {
-        thetheString.clear();
-        loadLanguage(thetheLanguage = language);
-    }
-
-    static function getString(key:String) {
-        if (thetheString.exists(key))
-            return thetheString[key].replace('\\n', '\n');
-        else
-            trace('minor spelling mistake: $key');
-
-        return '';
+    public static function getString(key:String):String {
+        return translatedString.exists(key) ? translatedString[key] : '';
     }
 }

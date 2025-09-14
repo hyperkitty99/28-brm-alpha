@@ -26,5 +26,5 @@ class VisualsUISubState extends BaseOptionsMenu {
 	}
 
 	function onChangeFPSCounter() if(Main.fpsVar != null) Main.fpsVar.visible = ClientPrefs.data.showFPS;
-	function onChangeLanguage() switchLocalizedLanguage(ClientPrefs.data.language);
+	function onChangeLanguage() loadLocalizedLanguage(ClientPrefs.data.language);
 }

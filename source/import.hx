@@ -16,7 +16,7 @@ import backend.MusicBeatState;
 import backend.MusicBeatSubstate;
 import backend.CustomFadeTransition;
 import backend.LanguageHandler.getString as getLocalizedString;
-import backend.LanguageHandler.switchLanguage as switchLocalizedLanguage;
+import backend.LanguageHandler.loadLanguage as loadLocalizedLanguage;
 import backend.ClientPrefs;
 import backend.Conductor;
 import backend.BaseStage;

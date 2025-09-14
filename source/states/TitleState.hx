@@ -53,7 +53,7 @@ class TitleState extends MusicBeatState {
 		FlxG.save.bind('funkin', CoolUtil.getSavePath());
 		ClientPrefs.loadPrefs();
 		Highscore.load();
-		switchLocalizedLanguage(ClientPrefs.data.language);
+		loadLocalizedLanguage(ClientPrefs.data.language);
 
 		if(!initialized) {
 			if(FlxG.save.data != null && FlxG.save.data.fullscreen) FlxG.fullscreen = FlxG.save.data.fullscreen;

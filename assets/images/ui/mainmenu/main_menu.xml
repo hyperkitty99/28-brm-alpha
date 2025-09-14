@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf8"?>
+<TextureAtlas imagePath="main_menu.png">
+	<SubTexture name="books0000" x="1984" y="1257" width="743" height="363"/>
+	<SubTexture name="disc0000" x="2" y="1656" width="565" height="221"/>
+	<SubTexture name="door0000" x="3241" y="1431" width="295" height="480"/>
+	<SubTexture name="drink0000" x="3538" y="1431" width="292" height="467"/>
+	<SubTexture name="ffb0000" x="4431" y="579" width="562" height="788"/>
+	<SubTexture name="icon0000" x="3068" y="1802" width="126" height="87"/>
+	<SubTexture name="kvas0000" x="3832" y="1431" width="135" height="317"/>
+	<SubTexture name="light0000" x="2" y="579" width="3184" height="676"/>
+	<SubTexture name="monitor0000" x="3188" y="579" width="1241" height="850"/>
+	<SubTexture name="paper0000" x="1984" y="1622" width="825" height="305"/>
+	<SubTexture name="screwdriver0000" x="2811" y="1802" width="255" height="99"/>
+	<SubTexture name="shadow0000" x="2" y="1257" width="871" height="397"/>
+	<SubTexture name="stickies0000" x="2811" y="1431" width="428" height="369"/>
+	<SubTexture name="table0000" x="2" y="2" width="5043" height="575"/>
+	<SubTexture name="tissue0000" x="2729" y="1257" width="300" height="163"/>
+	<SubTexture name="tv dark0000" x="4431" y="1369" width="592" height="511"/>
+	<SubTexture name="tv light0000" x="1392" y="1257" width="590" height="465"/>
+	<SubTexture name="window0000" x="875" y="1257" width="515" height="552"/>
+</TextureAtlas>

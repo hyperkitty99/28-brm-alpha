@@ -19,7 +19,8 @@ class MainMenuState extends MusicBeatState {
 	var trigFYS:FlxBackdrop;
 	var trigICCER:FlxBackdrop;
 
-	var discCollected = false; var pcOn = false;
+	var discCollected = false;
+	var pcOn = false;
 	var noise:FlxSound;
 
 	var mCam:FlxCamera;
